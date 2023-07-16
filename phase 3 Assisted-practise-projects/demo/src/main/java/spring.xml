@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- collection of object beans -objects collection , bean -object-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- define a single bean  -->
+<bean id="airtel" class="demo.Airtel">
+<!-- setter injection -->
+<property name="speed" value="10"></property>
+</bean>
+
+
+<bean id="idea" class="demo.Idea">
+<constructor-arg name="speed" value="5"></constructor-arg>
+</bean>
+
+
+<bean id="capacino" class="com.coffee.Capacino">
+<!-- setter injection -->
+<property name="cream" value="yes"></property>
+</bean>
+
+
+<bean id="xpreso" class="com.coffee.Xpreso">
+<property name="cream" value="no"></property>
+</bean>
+
+
+  
+</beans>
