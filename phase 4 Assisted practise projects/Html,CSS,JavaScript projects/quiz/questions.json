@@ -1,0 +1,16 @@
+{
+  "questions":[
+     
+     
+      {
+          "question":"what is the capital of france",
+          "choices":["London","Paris","Rome","Berlin"],
+          "correctAnswer":"Paris"
+      },
+      {
+          "question":"Brass gets discoloured in air because of the presence of which of the following gases in air",
+          "choices":["Oxygen","Hydrogen sulphide","Carbon dioxide","Nitrogen"],
+          "correctAnswer":"Hydrogen sulphide"
+      }
+  ]
+}

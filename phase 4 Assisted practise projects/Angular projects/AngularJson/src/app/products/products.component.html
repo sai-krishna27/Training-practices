@@ -1,0 +1,31 @@
+
+
+<div [class]="getEnable?'show':'hide'">
+<h1>List of products</h1>
+<table border="1">
+<tr><th>Product id</th><th>Product Name</th><th>Product cost</th><th>Edit</th><th>Delete</th></tr>
+<tr *ngFor="let product of products">
+<td>{{product.id}}</td>
+<td>{{product.name}}</td>
+<td>{{product.cost}}</td>
+<td><button (click)="editproduct(product)">Edit</button></td><td><button (click)="deleteproduct(product.id)">Delete</button></td>
+</tr>
+</table>
+</div>
+
+
+
+<div [class]="EditEnable?'show':'hide'">
+  <h1>Edit data</h1>
+  
+  <form>
+    id:<input type="number" name="name" [(ngModel)]="tempproduct.id" disabled><br>
+    name:<input type="text" name="email" [(ngModel)]="tempproduct.name"><br>
+    cost:<input type="number" name="exp" [(ngModel)]="tempproduct.cost"><br>
+    <input type="submit" value="Update" (click)="updateproduct()"><br>
+    </form>
+</div>
+
+
+
+

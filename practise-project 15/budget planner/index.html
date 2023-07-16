@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form name="plan">
+    <h1>Available deals</h1>
+    <input type="checkbox" value="$100" name="deals">Creating an application for xyz bank to record transactions<br>
+    <input type="checkbox" value="$200" name="deals">Creating a retaurant website with all food menus<br>
+    <input type="checkbox" value="$300" name="deals">Developing an E-commerse website with all clothes as items<br>
+    <input type="checkbox" value="$400" name="deals">Developing a Quiz for spell-B cometition<br>
+    <input type="checkbox" value="$500" name="deals">Designing a mario game<br>
+    <input type="button" value="Estimate Budget" onclick="estimateBudget()">
+  </form>
+
+  <h1>Deals made</h1>
+  <div id="deals">---none---</div>
+    <div id="details"></div>
+  <br><br>
+  <h1>Add new Deal by manager</h1>
+  <form name="manager">
+    <table border="0">
+    <tr>
+      <td>Vendor Name :</td>
+      <td><input type="text" name="vendor" placeholder="Enter vendor name" required></td>
+    </tr>
+    <tr>
+      <td>Product Name :</td>
+      <td><input type="text" name="product" placeholder="Enter product name" required></td>
+    </tr>
+    <tr>
+      <td>Deal Description :</td>
+      <td><textarea name="deal" placeholder="Enter deal description" required></textarea></td>
+    </tr>
+    <tr>
+      <td>Expenses :</td>
+      <td><input type="number" name="expense" placeholder="Enter Amount in $" required></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2"><input type="button" value="add deal" onclick="addDeal()"></td>
+    </tr>
+
+  </table>
+  </form>
+  <hr>
+  <h1>Finance team</h1>
+  <p>Annual budget of the team is '$<span id="budget">0</span>'</p>
+  <script src="script.js"></script>
+  
+</body>
+</html>

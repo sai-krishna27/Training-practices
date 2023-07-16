@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" onclick="getContact()">Contact</button> <button type="button" onclick="getAbout()">About</button>
+  <h1 align="center">{{message}}</h1>
+ <!--<h2>{{wishdata | pipe:1:5}}</h2>-->
+  <h2>{{person | pipe:wishdata}}</h2>
+  <app-contact></app-contact>
+  <app-about></app-about>
+  <app-test (childData)="message=$event" [parentdata]="nameTemp"></app-test>
+  
+</body>
+</html>

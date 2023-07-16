@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  
+</head>
+<body style="font-family: Courgette;background-image: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg');
+background-size: cover;">
+  <div class="register-div">
+    <div class="register-form">
+      <h1 align="center">Register</h1>
+  <form name="reg">
+    <table border="0">
+      <tr>
+        <td>Id</td>
+        <td><input type="number" class="text" name="id"><div id="id" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" class="text" name="name"><div id="name" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" class="text" name="email"><div id="email" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" class="text" name="pass"><div id="pass" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td><input type="radio" class="form-check-input" name="gender">Male<input class="form-check-input" type="radio" name="gender">Female<div id="gender" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td>Favorite sport</td>
+        <td><input type="checkbox" class="form-check-input" name="sport">Swimming<input type="checkbox" class="form-check-input" name="sport">Football<div id="sport" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td>Subjects list</td>
+        <td><select  class="text" name="subs">
+          <option>C</option>
+          <option>Python</option>
+          <option>Java</option>
+        </select><div id="subs" style="color:red"></div></td>
+      </tr>
+      <tr><td>Upload your image</td>
+      <td><input type="file" class="form-control"></td></tr>
+      <tr>
+        <td>Address</td>
+        <td><textarea class="text" rows="5" cols="20" name="address"></textarea><div id="address" style="color:red"></div></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="button" class="submit" value="Register"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+</div>
+</body>
+</html>

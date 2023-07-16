@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <title>Ming's Diner</title>
+</head>
+<style>
+  body{
+    background:radial-gradient(circle , orange 10%,yellow 90%);
+  }
+.top{
+  background-size: cover;
+  background-image: url('https://assets.architecturaldigest.in/photos/63733ec2a2dd6ea6560eb6da/16:9/w_1615,h_908,c_limit/Ditas%20Interior%20Image%20-%201%20(8).png');
+  margin-bottom: 0px;
+}
+  .nav-back{
+    background-color: rgba(0, 0, 0, 0.295)
+  }
+  nav:first-child{
+    height: auto;
+  }
+  .navs{
+    float: right;
+  }
+  .navbar-menus{
+    margin:0px 10px;
+    border-radius: 20px 20px;
+  }
+  .res-title{
+    
+    padding: 100px 0px 0px 0px;
+    font-family: Courgette;
+    color: rgb(255, 238, 0);
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    text-shadow: rgb(0, 255, 34) 3px 3px 2px;
+  }
+  .sub-title{
+    float: right;
+    color: rgb(255, 255, 129);
+    font-size: 30px;
+    font-weight:bold;
+    padding-right: 20%;
+  }
+  .body{
+    width: auto;
+    height: 600px;
+    }
+  .form{
+    width: 30%;
+    height:40px;
+    border-radius: 20px;
+    border:0;
+    padding:10px 20px;
+  }
+  .nav-links{
+    border: 1px;
+    border-radius:20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:green;
+    background-color: rgb(252, 252, 252);
+    margin:0px 5px;
+  }
+  .nav-links:hover{
+    color:rgb(255, 255, 255);
+    background-color: green;
+  }
+  .home-part{
+    margin: 5% auto;
+    font-size: 40px;
+    color: rgb(255, 252, 55);
+    font-family: Courgette;
+  }
+  #home{
+    background-image: url('https://learnenglish.britishcouncil.org/sites/podcasts/files/2021-10/RS4905_81989918-hig_0.jpg');
+    background-size: cover;
+  }
+  #menu{
+    background-image: url('https://housing.com/news/wp-content/uploads/2022/11/5-Low-budget-outdoor-restaurant-designs.jpg');
+    background-size: cover;
+    padding-top: 5%;
+  }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 10%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.719);
+      color: white;
+      text-align: center;
+    }
+    .foot{
+      margin:0px 10px;
+    }
+    
+
+
+</style>
+<body>
+  <div class="top" >
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00000054; position: fixed;width:100%">
+    <div class="container-fluid ">
+      
+      <i class="fa-solid fa-utensils fa-bounce fa-2xl" style="color: #ffffff;"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button></div>
+      <div class="navs collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0" id="navbarTogglerDemo02" >
+        <a class="nav-links" href="#home">Home</a>
+        <a class="nav-links" href="#menu">Menu</a>
+        <a class="nav-links" href="#about">About</a>
+        <a class="nav-links" href="#contact">contact</a>
+      </div>
+  </nav>
+
+  <div class="body" style="margin-top: 0px;">
+    <h1 class="res-title">
+    Ming's diner</h1>
+    <i class="sub-title">~ Multi-cuisine Restaurant</i><br><br><br><br><br>
+    <form align="center">
+      <input type="text" class="form" placeholder="Search item">
+      <a href="#"><i class="fa-solid fa-magnifying-glass fa-shake fa-2xl" style="color: #b8faff;"></i></a>
+    </form>
+  </div>
+</div>
+
+<h1 style="text-align: center;font-family: Courgette;margin-top: 10px;margin-bottom: 0px;">Welcome to our home page</h1>
+  <div id="home" style="padding: 20px;">
+    <h1 class="home-part" align="center" style="color:aquamarine">What you will found here</h1>
+    <img src="https://imgmedia.lbb.in/media/2022/12/63a4409490478a2197c9f874_1671708820051.jpg" height="20%" width="20%" class="img-thumbnail" alt="..." style="float: left;">
+    <figure class="text-center home-part">
+      <blockquote class="blockquote">
+        <h1>"Here you can find a wide variety of cusines of your taste over continental ,<br> Italian , chiniese & other delicious deserts"</h1>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Director
+      </figcaption>
+    </figure><br><br>
+  </div>
+  <h1 style="text-align: center;font-family: Courgette;margin-top: 10px;margin-bottom: 0px;">Browse the menu items</h1>
+  <div id="menu">
+    <img src="https://i0.wp.com/img.paisawapas.com/ovz3vew9pw/2023/01/09103300/Rectangle-1Yorkshire-Lamb-Patties-1.png?resize=515%2C291&ssl=1" height="20%" width="20%" class="img-thumbnail" alt="..." style="float: left;">
+    <figure class="text-center home-part">
+      <blockquote class="blockquote">
+        <h1>"It will make your mouth swim to eat Yorkshire Lamb Patties, a delectable delicacy. Your weekend celebrations will be enjoyable as a result. With a crisp salad or mayonnaise dip, this delectable dish is served hot"</h1>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Yorkshire Lamb Patties
+      </figcaption>
+    </figure><br><br>
+
+    <img src="https://i0.wp.com/img.paisawapas.com/ovz3vew9pw/2023/01/09104347/Rectangle-1Stuffed-Jacket-Potatoes.png?resize=515%2C291&ssl=1" height="20%" width="20%" class="img-thumbnail" alt="..." style="float: left;">
+    <figure class="text-center home-part">
+      <blockquote class="blockquote">
+        <h1>"The cheesy, spicy, and deliciousness of stuffed jacket potatoes. It is consumed as a robust lunch or a light meal. Served with the rich mushroom mixture are these filled potatoes"</h1>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Stuffed Jacket Potatoes
+      </figcaption>
+    </figure><br><br>
+  </div>
+  <div id="about">
+    <h1 style="text-align: center;font-family: Courgette;margin-top: 10px;margin-bottom: 0px;">About our Restaurant</h1>
+    <h2 style="padding: 30px;color:rgb(255, 238, 0);text-align: justify;font-family: Courgette;margin-top: 10px;margin-bottom: 0px;background:linear-gradient(pink,green,orange)">
+      "Welcome to <mark>Ming's diner</mark>, where culinary excellence meets a warm and inviting ambiance. Nestled in the heart of India, our restaurant is a haven for food enthusiasts seeking a truly remarkable dining experience.
+
+Step through our doors and be greeted by an atmosphere that exudes elegance and charm. The stylish interior design combines modern aesthetics with subtle touches of Multi-cuisine, creating a space that is both sophisticated and comfortable. Soft lighting, tasteful décor, and carefully curated music set the stage for unforgettable moments shared with loved ones, friends, and colleagues.
+<br><br>
+At <mark>Ming's diner</mark>, we are passionate about providing our guests with a culinary journey that tantalizes the taste buds and ignites the senses. Our talented team of chefs, led by renowned Executive Chef <mark>Mr.Mark hiddleson</mark>, craft a menu that showcases the finest local and international flavors, using only the freshest, seasonal ingredients.
+<br><br>
+Indulge in our carefully curated selection of dishes, each a masterpiece in its own right. From delectable appetizers that awaken the palate to mouthwatering main courses that cater to diverse preferences, every dish is a celebration of flavors and culinary expertise. Our commitment to quality extends to our extensive wine list, carefully selected to perfectly complement your dining experience.
+<br><br>
+But our dedication to excellence doesn't stop at the food. Our highly trained and attentive staff are here to ensure that every moment you spend at <mark>Ming's diner</mark> is truly exceptional. From the warm welcome at the door to the impeccable service throughout your meal, our team is committed to making your visit memorable, personalized, and attentive to your needs.
+<br><br>
+Whether you're joining us for a romantic dinner, a family celebration, or a business gathering, <mark>Ming's diner</mark> is the perfect destination for any occasion. Our private dining rooms offer an intimate setting for special events, while our main dining area buzzes with energy and camaraderie.
+<br><br>
+We look forward to welcoming you to <mark>Ming's diner</mark>, where extraordinary flavors, impeccable service, and a captivating atmosphere come together to create an unforgettable dining experience. Come and savor the artistry of cuisine and the joy of shared moments in our culinary sanctuary"
+    </h2>
+  </div>
+ 
+    
+    <div id="contact" class="footer">
+      <div style="padding-top: 10px;">
+        <h1 style="float: left;">Contact Information</h1>
+        <i class="fa-brands fa-facebook fa-beat fa-xl foot"></i><i class="fa-brands fa-bounce fa-whatsapp fa-xl foot"></i>
+        <i class="fa-brands fa-twitter fa-beat fa-xl" style="color: #ffffff;"></i>
+        <br>
+        <a href="#" style="text-decoration: none;color: white; margin-right: 20px;">Terms and conditions</a>
+        <a href="#" style="text-decoration: none;color: white;">Privacy policy</a>
+      </div>
+    </div>
+</body>
+</html>
