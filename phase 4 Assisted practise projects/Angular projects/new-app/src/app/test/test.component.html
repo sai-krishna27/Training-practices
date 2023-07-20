@@ -1,0 +1,134 @@
+<!-- Interpolation binding -->
+<p>Hi! {{name}}</p>
+
+<!-- property binding -->
+sid <input type="text" [hidden]="ishidden">
+<button [disabled]="isdisabled">submit</button>
+
+
+<!-- class binding -->
+<h1 [class]="isactive?'active':'inactive'">Hi learners welcome!!!</h1>
+
+<!-- style binding-->
+<h1 [style]="active">style binding</h1>
+
+
+<!--Event binding -->
+<button (click)="increment()">increment</button>
+<button (click)="decrement()">decrement</button>
+
+<h1>{{count}}</h1>
+
+<!--Example-->
+<button (click)="changeStyle()">Change style</button>
+<h1 [style]="text">Some unknown text</h1>
+
+<!--Template reference-->
+<input #tempref type="text"> 
+<button (click)="getRef(tempref)">Temp ref</button>
+
+
+<!--Two way binding-->
+<input [(ngModel)]="twoway" type="text">
+{{twoway}}
+
+
+<!--ngif directive-->
+<h1 *ngIf="display ; else elseblock ">If block content</h1>
+<ng-template #elseblock>
+  <h2>Else block content</h2>
+</ng-template>
+<ng-template #thenblock>
+  <h2>then block content</h2>
+</ng-template>
+
+<!--ng switch-->
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'">You picked red color</h1>
+  <h1 *ngSwitchCase="'green'">You picked green color</h1>
+  <h1 *ngSwitchCase="'blue'">You picked blue color</h1>
+  <h1 *ngSwitchDefault>pick again</h1>
+</div>
+
+
+<!--ng for-->
+<div *ngFor="let animal of animals; index as i">
+  {{i}} {{animal}}
+</div>
+
+<!--component interation-->
+<h1>Hello {{parentdata}}</h1>
+<!--exporting child data via click-->
+<button (click)="sendData()">Send</button>
+
+<!--pipes-->
+<!--on strings-->
+<h1>Pipes</h1>
+<h2>{{"nAmE" | lowercase}}</h2>
+<h2>{{"Name" | uppercase}}</h2>
+<h2>{{"My naMe is piPE" | titlecase}}</h2>
+<h2>{{"Slicemyname" | slice:1:6}}</h2>
+<h2>{{jsonobj | json}}</h2>
+<!--On numbers-->
+<h2>{{5323.6389 | number:'1.2-3'}}</h2>
+<h2>{{5/6 | percent}}</h2>
+<!--Currency-->
+<h2>{{20 | currency:'INR':'code'}}</h2>
+<h2>{{20 | currency}}</h2>
+<h2>{{20 | currency:'INR'}}</h2>
+<!--Date-->
+<h2>{{date | date:'short'}}</h2>
+<h2>{{date | date:'shortDate'}}</h2>
+<h2>{{date | date:'shortTime'}}</h2>
+<h2>{{date | date:'medium'}}</h2>
+
+
+<!--service methos-->
+<ul *ngFor="let emp of employees;">
+  <li>{{emp.id}}.{{emp.name}}-{{emp.age}}</li>
+</ul>
+
+
+<!--task-->
+gender:
+<input [(ngModel)]="radiodata" type="radio" name="g" value="male"> male
+<input [(ngModel)]="radiodata" type="radio" name="g" value="female"> female <br>
+{{radiodata}}<br>
+
+Capital of karnataka<br>
+<input type="radio" name="group" value="Bangalore" [(ngModel)]="capital">Banglore<br>
+<input type="radio" name="group"  value="Bihar" [(ngModel)]="capital">Bihar<br>
+<input type="radio" name="group"  value="Hyderabad"[(ngModel)]="capital">Hyderabad<br>
+<input type="radio" name="group"  value="Mumbai" [(ngModel)]="capital">mumbai<br>
+<h2 *ngIf="capital==='Bangalore';else wrong">Score is 1</h2>
+<ng-template #wrong><h2>score is 0</h2></ng-template>
+
+
+<h1 *ngIf="show else fail">True</h1>
+<ng-template #fail><h2>False</h2></ng-template>
+
+<br><br>
+<h1 *ngIf="getform==='admin';then admin; else user">Admin<br></h1>
+<ng-template #admin>
+<h1>Admin<br>
+  <form>
+    Admin name :<input type="text"><br>
+    Admin password :<input type="password">
+  </form></h1></ng-template>
+<ng-template #user><h2>User login<br>
+  <form>
+    user name :<input type="text"><br>
+    user password :<input type="password">
+  </form>
+</h2></ng-template><br><br>
+Num1 : <input type="number" [(ngModel)]="num1">
+Num1 : <input type="number" [(ngModel)]="num2">
+operator : <input type="text" [(ngModel)]="opr">
+<div [ngSwitch]="opr">
+  <div *ngSwitchCase="'+'">{{num1+num2}}</div>
+  <div *ngSwitchCase="'-'">{{num1-num2}}</div>
+  <div *ngSwitchCase="'*'">{{num1*num2}}</div>
+  <div *ngSwitchCase="'/'">{{num1/num2}}</div>
+  <div *ngSwitchDefault>wrong option given</div>
+  </div>
+  

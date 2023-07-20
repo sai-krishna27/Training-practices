@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "fridge",
+      "cost": 5253
+    },
+    {
+      "id": 2,
+      "name": "fan",
+      "cost": 5211
+    }
+  ]
+}
